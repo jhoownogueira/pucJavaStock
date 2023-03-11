@@ -18,7 +18,7 @@ class StockService(private val productRepository: ProductRepository) {
                 throw IllegalArgumentException("A quantidade disponível em estoque é insuficiente para a baixa")
             }
 
-          //  product.stock = newAmount
+            product.stock = newAmount
             productRepository.save(product)
 
         }
